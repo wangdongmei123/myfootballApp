@@ -1,0 +1,158 @@
+//@import "../../libs/common.sass"
+.wrap
+  width: 100%
+  height: 100%
+  @include flex(1)
+  @include flexbox()
+  @include flex-direction(column)
+
+.my-controller
+  @include flex(1)
+  @include flexbox()
+  @include flex-direction(column)
+  width: 100%
+  overflow: hidden
+.index-content
+  @include flex(1)
+  width: 100%
+  @include flexbox()
+  @include flex-direction(column)
+
+  overflow: hidden
+.swiper-slide
+  width: 100%
+  height: 100%
+  img
+    width: 100%
+    height: 100%
+
+.home-header
+  width: 100%
+  height: .44rem
+  background-color: #0fc441
+  color: #ffffff
+  ul
+    width: 100%
+    height: 100%
+    @include flexbox()
+    li
+      &:first-child,&:last-child
+        width: .44rem
+        text-align: center
+        line-height: .44rem
+      &:nth-child(2)
+        @include flex(1)
+        text-align: center
+        line-height: .44rem
+        span
+          display: inline-block
+          height: .25rem
+          line-height: .25rem
+          width: .6rem
+          font-size: .12rem
+          &:first-child
+            background: #39cf63
+            border-radius: 15px 0 0 15px
+          &:last-child
+            background: #39cf63
+            border-radius: 0 15px 15px 0
+        span.active
+          background: #60d07e
+
+
+
+.home-section
+  @include flex(1)
+  @include flexbox()
+  @include flex-direction(column)
+  width: 100%
+  overflow: hidden
+  .nav
+    height: .35rem
+    > ul
+      height: .35rem
+      -webkit-box-sizing: border-box
+      @include flexbox()
+      //justify-content: space-between
+
+      li
+        border-bottom: 1px solid #cccccc
+        @include flex(1)
+        font-size: .14rem
+        text-align: center
+        line-height: .35rem
+        color: #6a6a6a
+      li.active
+        border-bottom: 2px solid #0fc441
+        color: #0fc441
+.iscroll
+  @include flex(1)
+  width: 100%
+  overflow: hidden
+.content
+  width: 100%
+  //@include flex-direction()
+  &:not(:nth-child(2))
+  padding-top: .05rem
+  ul
+    width: 100%
+    @include flexbox()
+    li
+      @include flexbox()
+      @include flex-direction($flex-direction:column)
+      &:not(:nth-child(2))
+        @include flex(1)
+      &:nth-child(2)
+        width: 0.05rem
+      img
+        width: 100%
+        height: 100%
+        display: inline-block
+      b
+        display: inline-block
+        height: 34px
+        line-height: 34px
+        font-size: .14rem
+        text-align: center
+
+.home-footer
+  width: 100%
+  border-top: 1px solid #d8d8d8
+  box-sizing: border-box
+  ul
+    @include flexbox()
+  li
+    @include flex()
+    text-align: center
+    color: #d9d9d9
+    b
+
+      font-size: 12px
+    i:not(:nth-child(3))
+      font-size: 20px
+      margin-top: 1px
+
+    em
+      font-size: 40px
+      color: #cccccc
+  .camera
+    z-index: 999999
+    position: absolute
+    width: 60px
+    height: 60px
+    border: 1px solid #d8d8d8
+    border-radius: 50%
+    bottom: 0
+    left: 50%
+    background: #fff
+    -webkit-transform: translate(-50%, 0)
+    -moz-transform: translate(-50%, 0)
+    em
+      line-height: 54px
+
+.footer-bg
+  color: #0bbf44
+
+.swiper-container
+  width: 100%
+  overflow: hidden

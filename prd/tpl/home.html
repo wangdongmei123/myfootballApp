@@ -1,0 +1,62 @@
+<header class="home-header">
+    <ul>
+        <li><i class="yo-ico">&#xe790;</i></li>
+        <li id="first-nav">
+            <span class="active">热点</span><span>关注</span>
+        </li>
+        <li><i class="yo-ico">&#xe790;</i></li>
+    </ul>
+</header>
+<div class="swiper-container" id="first-swiper">
+    <div class="swiper-wrapper ">
+        <div class="swiper-slide ">
+            <section class="home-section">
+                <nav class="nav">
+                    <ul id='nav'>
+                        <li class="active">足球现场</li>
+                        <li>足球生活</li>
+                        <li>足球美女</li>
+                    </ul>
+                </nav>
+
+                <div class="iscroll" id="scroll">
+                    <div class="content">
+                        <div class="swiper-container" id="home-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <ul ng-repeat="item in arr">
+                                        <li><img ng-src="{{item[0].img}}" alt=""/><b>{{item[0].title}}</b></li>
+                                        <li></li>
+                                        <li><img ng-src="{{item[1].img}}" alt=""/><b>{{item[1].title}}</b></li>
+                                    </ul>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    足球生活
+                                </div>
+                                <div class="swiper-slide">
+                                    足球美女
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="swiper-slide three-box">
+            <section class="home-section">
+                <nav class="nav">
+                    <ul id='nav1'>
+                        <li class="active">1111</li>
+                        <li>2222</li>
+                        <li>3333</li>
+                    </ul>
+                </nav>
+
+
+            </section>
+        </div>
+    </div>
+</div>
